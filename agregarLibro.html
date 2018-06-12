@@ -1,0 +1,46 @@
+<html>
+  <body>
+<div class="modal-content" name="myModal">
+
+        <div class="modal-header">
+        
+        <h4 class="modal-title">Agregar libro</h4>
+        </div>
+            
+
+        <div class="modal-body">
+        <form name="myForm" novalidate >
+        <h6>Titulo</h6>
+        <input type="text"  name="title" ng-model="nuevoLibro.name" size="35" required>
+        <span style="color:red" ng-show="myForm.title.$dirty && myForm.title.$invalid">
+        <span ng-show="myForm.title.$error.required">Se requiere un Titulo</span></span>
+
+        <h6>Autor</h6>
+        <input type="text"  name="autor" ng-model="nuevoLibro.autor" size="35" required>
+        <span style="color:red" ng-show="myForm.autor.$dirty && myForm.autor.$invalid">
+        <span ng-show="myForm.autor.$error.required">Se requiere un autor</span></span>
+        
+        <h6>Editorial</h6>
+        <input type="text" name="editorial" ng-model="nuevoLibro.editorial" size="35" required>
+        <span style="color:red" ng-show="myForm.editorial.$dirty && myForm.editorial.$invalid">
+        <span ng-show="myForm.editorial.$error.required">Se requiere una editorial</span></span>
+        
+        <h6>Edicion</h6>
+        <input type="number" name="edicion" ng-model="nuevoLibro.edition" size="35" required>
+        <span style="color:red" ng-show="myForm.edicion.$dirty && myForm.edicion.$invalid">
+        <span ng-show="myForm.edicion.$error.required">Se requiere una edicion</span></span>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal" ng-click="cancel()">X</button>
+          <button type="button" class="btn btn-success" ng-disabled="myForm.title.$invalid || myForm.autor.$invalid || myForm.editorial.$invalid || myForm.edicion.$invalid" 
+          ng-click="agregarNuevoLibro()">Aceptar</button>
+        </form>
+    </div>        
+</div>
+</body>
+</html>
+
+
+
+    

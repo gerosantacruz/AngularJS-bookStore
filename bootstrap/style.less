@@ -1,0 +1,36 @@
+// Core variables and mixins
+@import "bootstrap.less";
+ 
+
+
+@body: #fafafa;
+@fontFamily: "times new roman";
+@fontcolor: black;
+@title: center;
+@tableborder: 3px solid black;
+
+
+
+body{
+    background-color: @body;
+}
+
+h1{
+    font-family: @fontFamily;
+    color: @fontcolor;
+    text-align: @title;    
+}
+
+table{
+    margin-left: 15%;
+    border: @tableborder;
+    border-collapse: collapse;
+    width: 75%;
+}
+
+th, td{
+    border-bottom: 1px solid #ddd;
+}
+
+
+

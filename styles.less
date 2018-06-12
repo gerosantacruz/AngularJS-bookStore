@@ -1,0 +1,72 @@
+@import "bootstrap/bootstrap.less";
+@colorBody:#fcfcfc;
+@font-family-title: "times new roman";
+@titleAilign: center;
+@page-margin-left: 15%;
+@page-margin-top:40px;
+@page-back-color: #13b626;
+@page-font:"Trebuchet MS", Arial, Helvetica, sans-serif;
+@color-inside:white;
+
+body{
+    background-color: @colorBody;
+}
+#title{
+    font-family: @font-family-title;
+    text-align: @titleAilign;
+}
+
+#searchBar{
+    margin-left: @page-margin-left;
+    margin-top: @page-margin-top;
+    font-family: @page-font;  
+    width: 450px; 
+    padding:5px;
+    border-radius: 4px;
+    color: black;
+    
+    
+
+}
+
+table{
+    border: 1px solid rgb(102, 102, 102);
+    margin-top: @page-margin-top;
+    margin-left: @page-margin-left;
+    width: 75%;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+th{
+    height: 57px;
+    text-align: center;
+    background-color: @page-back-color;
+    color: @color-inside;
+}
+
+td{
+    height:45px;
+    border-bottom: 1px solid rgb(102, 102, 102);
+    
+}
+
+tr:hover {
+    background-color: #ddd;
+    
+}
+
+
+#edition{
+    text-align: center;
+}
+
+#submitButton{
+    margin-left: 75%;
+    margin-top: 30px;
+}
+
+.form{
+    size: 50;
+}
+
